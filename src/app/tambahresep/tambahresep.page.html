@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>tambahresep</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input placeholder="Masukkan Nama" [(ngModel)]="nama"></ion-input>
+  <ion-input placeholder="Masukkan Deskripsi" [(ngModel)]="desk"></ion-input>
+  <ion-input placeholder="Masukkan Waktu" [(ngModel)]="waktu"></ion-input>
+
+  <div class="ion-text-end ion-margin">
+    <ion-button fill="outline" color="danger">KOSONGKAN</ion-button>
+    <ion-button (click)="simpandata()">SIMPAN</ion-button>
+  </div>
+</ion-content>

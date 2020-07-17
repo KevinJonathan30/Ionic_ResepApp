@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detail Firebase</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-img [src] = "isiImg[(cariresep2.imgresep | async)]"></ion-img>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <h1 class="ion-text-center">{{cariresep2.namaresep}}</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    {{cariresep2.deskripsi}}
+  </ion-row>
+</ion-content>
